@@ -1,0 +1,39 @@
+.parent {
+    background-color: #2a2a2a;
+    box-shadow: white;
+    width: 1000px;
+    height: 300px;
+    border-radius: 15px;
+    border: 1px solid rgb(138, 54, 255);
+    margin-top: 200px;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 40px;
+    margin: 20px 0;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: end;
+}
+button {
+    margin: auto;
+    width: 100px;
+    margin-top: 10px;
+    padding: 0px 20px;
+    padding-top: 10px;
+    font-size: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+button:hover{
+    background-color: rgb(138, 54, 255);
+    transition: 0.5s ease all;
+}
