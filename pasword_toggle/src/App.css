@@ -1,0 +1,22 @@
+.parent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+  width: 500px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+}
+input {
+  height: 50px;
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: white;
+}
+.icon{
+  font-size: 30px;
+}
