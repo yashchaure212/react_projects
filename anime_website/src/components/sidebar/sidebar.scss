@@ -1,0 +1,122 @@
+.sidebar {
+    overflow: hidden;
+    height: calc(100vh - 80px);
+    width: 30vh;
+    background-color: #343434;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+
+    .btn{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 25px;
+    }
+
+    hr{
+        margin-top: 2rem;
+        border: 1px solid #717171;
+    }
+    
+
+    .s-heading{
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 10px;
+    }
+    .s-list{
+        list-style: none;
+        width: 100%;
+
+        .s-list-cont {
+            cursor: pointer;
+            margin: 10px;
+            height: 3.5rem;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 10px;
+            border: 1px solid #555;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+        .s-list-cont:hover {
+            background-color: #6a6a6a;
+        }
+    }
+    .s-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0px;
+        h5{
+            font-weight: 400;
+        }
+        h6{
+            font-weight: 400;
+        }
+    }
+}
+.sidebar::-webkit-scrollbar {
+    width: 10px;
+  }
+.sidebar::-webkit-scrollbar-track {
+    background-color:  #343434;
+  }
+.sidebar::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #767676;
+    border-radius: 50px;
+  }
+
+  @media only screen and (max-width: 740px) {
+    .sidebar {
+        position: fixed;
+        width: 60%;
+        .btn{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            font-size: 18px;
+        }
+        .s-heading{
+            font-size: 1rem;
+        }
+        .s-list{
+    
+            .s-list-cont {
+                margin: 10px;
+                height: 2.5rem;
+                width: 90%;
+                padding: 0 10px;
+                font-size: 0.7rem;
+            }
+            
+            .s-list-cont:hover {
+                background-color: #6a6a6a;
+            }
+        }
+        .s-about{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0px;
+            h5{
+                text-align: center;
+                font-weight: 500;
+            }
+            h6{
+                font-weight: 400;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    }
+    
+  }
